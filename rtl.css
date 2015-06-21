@@ -1,0 +1,309 @@
+.threecol, .fourcol, .eightcol, .ninecol {
+    margin-left: 3.8%;
+    float: right;
+	margin-right: auto;
+}
+
+.row .fourcol {
+    float: left;
+}
+
+.row .eightcol {
+    float: right;
+}
+
+.row .ninecol#recent-posts {
+    float: left;
+}
+
+.row .twelvecol {
+    float: right;
+}
+
+.last {
+    margin-left: 0px;
+	margin-right: auto;
+}
+
+#recent-excerpts .wp-post-image {
+    margin: 17px 0 6px 12px;
+}
+
+/* ---------- @ Mobile -----------*/
+
+@media handheld, only screen and (max-width: 767px) {
+	/*Content*/
+
+	#recent-excerpts .wp-post-image {
+		margin: 17px 0 6px 12px;
+	}
+}
+
+
+
+
+
+
+
+blockquote {
+	border-right:3px solid #CCC;
+	border-left: none;
+}
+
+/* ---------- @ Structure -----------*/
+
+.right, .older {
+	float:right;
+}
+
+.left, .newer {
+	float:left;
+}
+
+/* ---------- @ Nav -----------*/
+/*Mobile*/
+
+/* Navigation */
+
+.nav li {
+	float:right;
+}
+
+.nav ul {
+	right:0;
+	background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,rgba(181,189,200,1)), color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(228,228,228,1)));
+	text-align: right;
+	left: auto;
+}
+
+.nav ul ul {
+	right: 100%;
+	left: auto;
+}
+
+.nav .has-children {
+	padding-left:24px !important;
+	padding-right: 0;
+}
+
+.nav .has-children:after {
+	background:url('images/arrow_nav.png') no-repeat left;
+	left:12px;
+	right: auto;
+}
+
+/* main navigation */
+
+#nav-primary li {
+	border-left: 1px solid #101314;
+	border-right: 1px solid #393e40;
+}
+
+/*Home*/
+
+#lead-image {
+	float: right;
+	margin: 2% 2% 2% 0;
+}
+
+#lead-text {
+	float: left;
+}
+
+#featured-cats {
+	width: right;
+}
+
+#recent-excerpts .wp-post-image {
+	float: right;
+	margin: 15px 4px 0 15px;
+}
+
+/*Misc*/
+
+.commentcount {
+	padding-right: 17px;
+	padding-left: 0;
+}
+
+/* Author Page*/
+
+#writer .avatar {
+	margin:4px 0 7px 17px;
+}
+
+/* Search and Archives*/
+
+#pagination li {
+	float:right;
+}
+
+#pagination li#newer {
+	float:left;
+}
+
+.archive article, .search article, .page-template-custom-page-blog-php article {
+	float: right;
+}
+
+.archive article.odd, .search article.odd, .page-template-custom-page-blog-php article.odd {
+	margin-left:30px;
+	margin-right: auto;
+}
+
+.thumb-wrap img {
+	float: right;
+	margin:3px 3px 20px 15px;
+}
+
+/*Sidebar and Widgets*/
+
+.widget li {
+	margin-right: 15px;
+	margin-left: auto;
+}
+
+aside .widget-wrap li li {
+	margin:0 30px 0 0;
+}
+
+aside .widget-wrap .avatar {
+	margin: 10px 10px 0 7px;
+}
+
+/* ---------- @ Post Styles -----------*/
+
+.entry ol li, .entry ul li {
+	margin:0 48px 10px 0;
+}
+
+.postnav.left {
+	text-align:left;
+}
+
+#tags a, #tags a:visited {
+	margin-left: 5px;
+	margin-right: auto;
+}
+
+#sharethis a, #sharethis a:visited {
+	padding: 4px 6px 4px 14px;
+}
+
+.entry #sharethis img {
+	margin: 0 0 0 2px;
+}
+
+.entry #related-posts li {
+	float: right;
+}
+
+.entry #related-posts img {
+	float: right;
+	margin:0 0 0 12px;
+}
+
+/*Post Images*/
+
+img.alignright {
+	margin:5px 5px 10px 15px;
+	float:right;
+}
+
+img.alignleft {
+	margin:5px 15px 10px 5px;
+	float:left;
+}
+
+.wp-caption.alignright {
+	float:right;
+	margin:20px 0 10px 22px;
+}
+
+.wp-caption.alignleft {
+	float:left;
+	margin:20px 22px 10px 0;
+}
+
+#image-gallery .image-gallery-item {
+	float:right;
+	margin:0 0 15px 15px;
+}
+
+/* ---------- @ Comments -----------*/
+
+.commentlist ol,
+.commentlist ul {
+	margin-right:22px;
+	margin-left: auto;
+}
+
+.commentlist li.depth-2,
+.commentlist li.depth-3,
+.commentlist li.depth-4,
+.commentlist li.depth-5 {
+	padding:10px 20px 10px 0;
+	margin:10px 20px 10px 0;
+	border-right: 1px solid #d6d6d6;
+	border-left: none;
+}
+
+.avatar {
+	margin: 3px 0 0 11px;
+	float:right;
+}
+
+#trackbacklist li {
+	margin: 10px 35px 10px 0;
+}
+
+#cancel-comment-reply-link {
+	margin-right: 12px;
+	margin-left: auto;
+}
+
+/* ---------- @ Form Elements -----------*/
+
+#commentform input[type=text] {
+	float:right;
+	margin-left:10px;
+	margin-right: auto;
+}
+
+.menu#nav-lower,
+.form-submit input,
+.button {
+	background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#fefefe), color-stop(100%,#e1e1e1));
+}
+
+header .searchform {
+	float:left;
+}
+
+#masthead form.searchform {
+	float:left;
+}
+
+input.searchfield {
+	padding: 7px 12px 7px 30px;
+}
+
+input.searchsubmit {
+	right:auto;
+	left:4px;
+}
+
+/* ---------- @ Footer -----------*/
+
+footer .left {
+	text-align: left;
+}
+
+footer #icon-rss {
+	margin-left:5px;
+	margin-right: auto;
+}
+
+footer .col {
+	float:right;
+}

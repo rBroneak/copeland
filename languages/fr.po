@@ -1,0 +1,399 @@
+# Translation of Opti in French (France)
+# This file is distributed under the same license as the Opti package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-10-28 03:22:52+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Opti\n"
+
+#: functions.php:693
+msgid "Posts navigation"
+msgstr "Navigation des articles"
+
+#: archive.php:72
+msgid "Chats"
+msgstr "Chats"
+
+#: archive.php:68
+msgid "Audios"
+msgstr "Audios"
+
+#: archive.php:64
+msgid "Statuses"
+msgstr "États"
+
+#: archive.php:60
+msgid "Links"
+msgstr "Liens"
+
+#: archive.php:56
+msgid "Quotes"
+msgstr "Citations"
+
+#: archive.php:52
+msgid "Videos"
+msgstr "Vidéos"
+
+#: archive.php:49
+msgid "Images"
+msgstr "Images"
+
+#: archive.php:45
+msgid "Galleries"
+msgstr "Galeries"
+
+#: archive.php:41
+msgid "Asides"
+msgstr "Apart&eacute;s"
+
+#: archive.php:37
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:37
+msgid "Year: %s"
+msgstr "Ann&eacute;e: %s"
+
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:29
+msgid "Day: %s"
+msgstr "Jour: %s"
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr "Mois: %s"
+
+#: archive.php:25
+msgid "Author: %s"
+msgstr "Auteur : %s"
+
+#: functions.php:1209
+msgid "Page %s"
+msgstr "Page %s"
+
+#: functions.php:686
+msgid "Older &rsaquo;"
+msgstr "Pr&eacute;c&eacute;dent &rsaquo;"
+
+#: functions.php:687
+msgid "&lsaquo; Newer"
+msgstr "Plus R&eacute;cent"
+
+#: content-page.php:18 content-single.php:21 custom-page-fullwidth.php:30
+msgid "Pages: "
+msgstr "Pages :"
+
+msgid "Full Width"
+msgstr ""
+
+msgid "An elegant magazine theme for WordPress, with a responsive design, and support for widgets, post thumbnails, custom headers and custom backgrounds."
+msgstr "Un thème magazine produisant un WordPress élégant, avec un design adaptatif et la prise en charge des widgets, des vignettes d'aperçu des publications, des en-têtes et arrière-plans personnalisés."
+
+#: archive.php:76
+msgid "Archives"
+msgstr "Archives"
+
+#: searchform.php:9
+msgid "Search"
+msgstr "Recherche"
+
+#: search.php:30
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Contenu Introuvable. Réessayez en modifiant les termes de recherche."
+
+#: index.php:29
+msgid "Recent Posts - page %d"
+msgstr "Articles récents - page %d"
+
+#: index.php:56
+msgid "Featured Categories"
+msgstr "Catégories Vedettes"
+
+#: index.php:68
+msgid "%s &rsaquo;"
+msgstr "%s &rsaquo;"
+
+#: search.php:13
+msgid "Search results for &#8216;<em>%s</em>&#8217;"
+msgstr "R&eacute;sultat de recherche pour &#8216;<em>%s</em>&#8217;"
+
+#: index.php:23
+msgid "Recent Posts"
+msgstr "Articles récents"
+
+#: includes/postmetadata.php:10
+msgid "<span class=\"byline\">By <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span> <em>on</em> <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\">%4$s</time></a>"
+msgstr "<span class=\"byline\">Par <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span> <em>le</em> <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\">%4$s</time></a>"
+
+#: includes/postmetadata.php:16
+msgid "View all posts by %s"
+msgstr "Voir tous les articles par %s"
+
+#: includes/pagination.php:10
+msgid "&lsaquo; Older Entries"
+msgstr "&lsaquo; Entrées précédentes"
+
+#: includes/pagination.php:13
+msgid "Newer Entries &rsaquo;"
+msgstr "Entrées plus récentes &rsaquo;"
+
+#: includes/administration.php:392
+msgid "Deselect All"
+msgstr "Désélectionner tout"
+
+#: includes/administration.php:426
+msgid "default"
+msgstr "Valeur par défaut"
+
+#: includes/administration.php:391
+msgid "Check All"
+msgstr "Tout cocher"
+
+#: includes/administration.php:15 includes/administration.php:54
+msgid "Theme Options"
+msgstr "Options du thème"
+
+#: functions.php:281
+msgctxt "Merriweather font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:1063 functions.php:1067
+msgid "Page %d"
+msgstr "Page %d"
+
+#: functions.php:922
+msgid "... <a href=\"%s\" class=\"read-more\">Read More &rsaquo;</a>"
+msgstr "... <a href=\"%s\" class=\"read-more\">Lire la suite &rsaquo;</a>"
+
+#: functions.php:1046
+msgid "Search : "
+msgstr "Recherche :"
+
+#: functions.php:1048
+msgid "404 Page not found"
+msgstr "404 Page Not Found"
+
+#: functions.php:581
+msgid "Log in to reply"
+msgstr "Connectez-vous pour répondre"
+
+#: functions.php:580
+msgid "Reply &darr;"
+msgstr "Répondre &darr;"
+
+#: functions.php:569
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de modération."
+
+#: functions.php:560
+msgid "%1$s &bull; %2$s"
+msgstr "%1$s &bull; %2$s"
+
+#: functions.php:562 includes/edit.php:8
+msgid "Edit"
+msgstr "Modifier"
+
+#: functions.php:557
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr "<cite class=\"fn\">%s</cite>"
+
+#: functions.php:509 functions.php:947 header.php:30
+msgid "Home"
+msgstr "Accueil"
+
+#: functions.php:346
+msgid "Sidebar Widgets"
+msgstr "Sidebar"
+
+#: functions.php:358
+msgid "Left Footer Widgets"
+msgstr ""
+
+#: functions.php:370
+msgid "Left Middle Footer Widgets"
+msgstr ""
+
+#: functions.php:382
+msgid "Right Middle Footer Widgets"
+msgstr ""
+
+#: functions.php:394
+msgid "Right Footer Widgets"
+msgstr ""
+
+#: functions.php:455
+msgid "Continue reading &rarr;"
+msgstr "Lire la Suite &rarr;"
+
+#: functions.php:197
+msgid "Header Position:"
+msgstr "Position de l'En-tête:"
+
+#: functions.php:201
+msgid "Below Navigation (default)"
+msgstr "Sous la Navigation (par défaut)"
+
+#: functions.php:202
+msgid "In Header"
+msgstr "Dans l'En-tête"
+
+#: functions.php:328
+msgid "Main Navigation"
+msgstr "Navigation principale"
+
+#: functions.php:329
+msgid "Sub Navigation"
+msgstr "Sous navigation"
+
+#: functions.php:87
+msgid "Number of featured posts to display on the homepage in the featured categories section."
+msgstr "Le nombre d'articles en vedette à afficher en page d'accueil dans la section des catégories vedettes."
+
+#: functions.php:90
+msgid "Display Related Posts"
+msgstr "Afficher des articles sur le même thême"
+
+#: functions.php:94
+msgid "Would you like to display the related posts on single post pages?"
+msgstr "Souhaitez-vous afficher les articles similaires sur les pages d'article?"
+
+#: functions.php:172
+msgid "Content Background Color"
+msgstr "Couleur d'arrière-plan du contenu"
+
+#: functions.php:173
+msgid "Content Link Color"
+msgstr "Couleur des liens dans le contenu"
+
+#: functions.php:77
+msgid "Note: You need to upload and select an image for this to take effect."
+msgstr ""
+
+#: functions.php:80
+msgid "Featured Posts"
+msgstr "Articles En Vedette"
+
+#: functions.php:54
+msgid "Hide the homepage categories listing"
+msgstr "Masquer la liste de catégories de la page d'accueil"
+
+#: functions.php:57
+msgid "Homepage Categories"
+msgstr "Catégories de la page d'accueil"
+
+#: functions.php:64
+msgid "Categories to display on the left hand side of the homepage. Deselect all of them to automatically select posts from the categories with the most content."
+msgstr ""
+
+#: functions.php:67
+msgid "Display Header Image on"
+msgstr ""
+
+#: functions.php:73
+msgid "All Pages"
+msgstr "Toutes les pages"
+
+#: functions.php:50
+msgid "Display Homepage Categories"
+msgstr "Afficher les catégories de la page d'accueil"
+
+#: functions.php:14
+msgid "Opti Options"
+msgstr "Options de Opti"
+
+#: functions.php:45 functions.php:72
+msgid "Homepage"
+msgstr "Page d'accueil "
+
+#: footer.php:41
+msgid "Theme: %1$s by %2$s."
+msgstr "Thème %1$s par %2$s."
+
+#: footer.php:39
+msgid "Proudly powered by %s"
+msgstr "Fièrement propulsé par %s"
+
+#: content-single.php:52
+msgid "Related Articles"
+msgstr "Articles similaires"
+
+#: footer.php:39
+msgid "A Semantic Personal Publishing Platform"
+msgstr "Une plate-forme sémantique de publication personnelle"
+
+#: content-single.php:40
+msgid "Tags: "
+msgstr "Tags:"
+
+#: content-attachment.php:15
+msgid "<p class=\"postmetadata\">Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%7$s</a></p>"
+msgstr ""
+
+#: content-attachment.php:37
+msgid "&lsaquo; Back"
+msgstr "&lsaquo; Retour"
+
+#: content-single.php:34
+msgid "Categories: "
+msgstr "Catégories&nbsp;:"
+
+#: content-archive.php:10 content-featured.php:12 content-featured.php:19
+#: content-home-loop.php:9 index.php:76
+msgid "Permalink to %s"
+msgstr "Permalien vers %s"
+
+#: comments.php:41
+msgid "Trackbacks"
+msgstr "Rétroliens"
+
+#: comments.php:33
+msgid "Newer Comments &rsaquo;"
+msgstr "Commentaires Récents &rsaquo;"
+
+#: comments.php:23
+msgid "Leave a comment &rsaquo;"
+msgstr "Poster un commentaire &rsaquo;"
+
+#: comments.php:30
+msgid "&lsaquo; Older Comments"
+msgstr "&lsaquo; Commentaires Précédents"
+
+#: comments.php:10
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Veuillez ne pas charger directement cette page. Merci !"
+
+#: comments.php:21
+msgid "1 reply"
+msgid_plural "%1$s replies"
+msgstr[0] "1 réponse"
+msgstr[1] "%1$s réponses"
+
+#: author.php:13
+msgid "Author Archives"
+msgstr "Archives d&rsquo;Auteur"
+
+#: archive.php:101
+msgid "Not Found"
+msgstr "Rien de trouvé"
+
+#: 404.php:15
+msgid "Sorry, but the page you are looking for has not been found. Try checking the URL for errors, then hit the refresh button in your browser."
+msgstr "Désolé, mais la page que vous cherchez est introuvable. Vérifiez son adresse, puis appuyez sur le bouton d'actualisation de votre navigateur."
+
+#: 404.php:14
+msgid "Oops!"
+msgstr "Oups!"
+
+#: 404.php:13
+msgid "Error 404"
+msgstr "Erreur 404"

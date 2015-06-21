@@ -1,0 +1,398 @@
+# Translation of Opti in Japanese
+# This file is distributed under the same license as the Opti package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-10-28 03:22:52+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Opti\n"
+
+#: functions.php:693
+msgid "Posts navigation"
+msgstr "投稿ナビゲーション"
+
+#: archive.php:72
+msgid "Chats"
+msgstr "チャット"
+
+#: archive.php:68
+msgid "Audios"
+msgstr "音声"
+
+#: archive.php:64
+msgid "Statuses"
+msgstr "状態"
+
+#: archive.php:60
+msgid "Links"
+msgstr "リンク"
+
+#: archive.php:56
+msgid "Quotes"
+msgstr "引用"
+
+#: archive.php:52
+msgid "Videos"
+msgstr "動画"
+
+#: archive.php:49
+msgid "Images"
+msgstr "画像"
+
+#: archive.php:45
+msgid "Galleries"
+msgstr "ギャラリー"
+
+#: archive.php:41
+msgid "Asides"
+msgstr "アサイド"
+
+#: archive.php:37
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y年"
+
+#: archive.php:37
+msgid "Year: %s"
+msgstr "年別アーカイブ: %s"
+
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "Y年n月"
+
+#: archive.php:29
+msgid "Day: %s"
+msgstr "日別アーカイブ: %s"
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr "月別アーカイブ: %s"
+
+#: archive.php:25
+msgid "Author: %s"
+msgstr "作成者: %s"
+
+#: functions.php:1209
+msgid "Page %s"
+msgstr "ページ %s"
+
+#: functions.php:686
+msgid "Older &rsaquo;"
+msgstr "旧 &rsaquo;"
+
+#: functions.php:687
+msgid "&lsaquo; Newer"
+msgstr "&lsaquo; 新"
+
+#: content-page.php:18 content-single.php:21 custom-page-fullwidth.php:30
+msgid "Pages: "
+msgstr "ページ:"
+
+msgid "Full Width"
+msgstr "全幅"
+
+msgid "An elegant magazine theme for WordPress, with a responsive design, and support for widgets, post thumbnails, custom headers and custom backgrounds."
+msgstr "WordPress のためのエレガントなマガジンスタイルテーマ。レスポンシブデザイン、ウィジェット、投稿サムネイル、カスタムヘッダーやカスタム背景に対応しています。"
+
+#: archive.php:76
+msgid "Archives"
+msgstr "アーカイブ"
+
+#: searchform.php:9
+msgid "Search"
+msgstr "検索"
+
+#: search.php:30
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "ご指定の検索条件に合う投稿がありませんでした。他のキーワードでもう一度検索してみてください。"
+
+#: index.php:29
+msgid "Recent Posts - page %d"
+msgstr "最近の投稿 - ページ %d"
+
+#: index.php:56
+msgid "Featured Categories"
+msgstr "注目のカテゴリー"
+
+#: index.php:68
+msgid "%s &rsaquo;"
+msgstr "%s &rsaquo;"
+
+#: search.php:13
+msgid "Search results for &#8216;<em>%s</em>&#8217;"
+msgstr "「%s」の検索結果"
+
+#: index.php:23
+msgid "Recent Posts"
+msgstr "最近の投稿"
+
+#: includes/postmetadata.php:10
+msgid "<span class=\"byline\">By <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span> <em>on</em> <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\">%4$s</time></a>"
+msgstr "<span class=\"byline\">投稿者: <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span> 投稿日: <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\">%4$s</time></a>"
+
+#: includes/postmetadata.php:16
+msgid "View all posts by %s"
+msgstr "%s のすべての投稿を表示"
+
+#: includes/pagination.php:10
+msgid "&lsaquo; Older Entries"
+msgstr "&lsaquo; 過去の投稿"
+
+#: includes/pagination.php:13
+msgid "Newer Entries &rsaquo;"
+msgstr "新しい投稿 &rsaquo;"
+
+#: includes/administration.php:392
+msgid "Deselect All"
+msgstr "すべての選択を解除"
+
+#: includes/administration.php:426
+msgid "default"
+msgstr "デフォルト"
+
+#: includes/administration.php:391
+msgid "Check All"
+msgstr "すべて選択"
+
+#: includes/administration.php:15 includes/administration.php:54
+msgid "Theme Options"
+msgstr "テーマオプション"
+
+#: functions.php:281
+msgctxt "Merriweather font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:1063 functions.php:1067
+msgid "Page %d"
+msgstr "ページ %d"
+
+#: functions.php:922
+msgid "... <a href=\"%s\" class=\"read-more\">Read More &rsaquo;</a>"
+msgstr "… <a href=\"%s\" class=\"read-more\">続きを読む &rsaquo;</a>"
+
+#: functions.php:1046
+msgid "Search : "
+msgstr "検索:"
+
+#: functions.php:1048
+msgid "404 Page not found"
+msgstr "404 エラー: ページが見つかりません"
+
+#: functions.php:581
+msgid "Log in to reply"
+msgstr "ログインして返信する"
+
+#: functions.php:580
+msgid "Reply &darr;"
+msgstr "返信 &darr;"
+
+#: functions.php:569
+msgid "Your comment is awaiting moderation."
+msgstr "あなたのコメントは承認待ちです。"
+
+#: functions.php:560
+msgid "%1$s &bull; %2$s"
+msgstr "%1$s &bull; %2$s"
+
+#: functions.php:562 includes/edit.php:8
+msgid "Edit"
+msgstr "編集"
+
+#: functions.php:557
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr "<cite class=\"fn\">%s</cite>"
+
+#: functions.php:509 functions.php:947 header.php:30
+msgid "Home"
+msgstr "ホーム"
+
+#: functions.php:346
+msgid "Sidebar Widgets"
+msgstr "サイドバーウィジェット"
+
+#: functions.php:358
+msgid "Left Footer Widgets"
+msgstr "左フッターウィジェット"
+
+#: functions.php:370
+msgid "Left Middle Footer Widgets"
+msgstr "左中央フッターウィジェット"
+
+#: functions.php:382
+msgid "Right Middle Footer Widgets"
+msgstr "右中央フッターウィジェット"
+
+#: functions.php:394
+msgid "Right Footer Widgets"
+msgstr "右フッターウィジェット"
+
+#: functions.php:455
+msgid "Continue reading &rarr;"
+msgstr "続きを読む &rarr;"
+
+#: functions.php:197
+msgid "Header Position:"
+msgstr "ヘッダー位置 :"
+
+#: functions.php:201
+msgid "Below Navigation (default)"
+msgstr "ナビゲーション下 (デフォルト)"
+
+#: functions.php:202
+msgid "In Header"
+msgstr "ヘッダー内"
+
+#: functions.php:328
+msgid "Main Navigation"
+msgstr "メインナビゲーション"
+
+#: functions.php:329
+msgid "Sub Navigation"
+msgstr "サブ・ナビゲーション"
+
+#: functions.php:87
+msgid "Number of featured posts to display on the homepage in the featured categories section."
+msgstr ""
+
+#: functions.php:90
+msgid "Display Related Posts"
+msgstr "関連記事を表示"
+
+#: functions.php:94
+msgid "Would you like to display the related posts on single post pages?"
+msgstr "個別投稿ページに関連記事を表示しますか ?"
+
+#: functions.php:172
+msgid "Content Background Color"
+msgstr "コンテンツ背景色"
+
+#: functions.php:173
+msgid "Content Link Color"
+msgstr "コンテンツリンク色"
+
+#: functions.php:77
+msgid "Note: You need to upload and select an image for this to take effect."
+msgstr ""
+
+#: functions.php:80
+msgid "Featured Posts"
+msgstr "おすすめ投稿"
+
+#: functions.php:54
+msgid "Hide the homepage categories listing"
+msgstr "ホームページカテゴリー一覧を非表示"
+
+#: functions.php:57
+msgid "Homepage Categories"
+msgstr "ホームページカテゴリー"
+
+#: functions.php:64
+msgid "Categories to display on the left hand side of the homepage. Deselect all of them to automatically select posts from the categories with the most content."
+msgstr ""
+
+#: functions.php:67
+msgid "Display Header Image on"
+msgstr ""
+
+#: functions.php:73
+msgid "All Pages"
+msgstr "固定ページ一覧"
+
+#: functions.php:50
+msgid "Display Homepage Categories"
+msgstr "ホームページカテゴリーを表示"
+
+#: functions.php:14
+msgid "Opti Options"
+msgstr "Opti 設定"
+
+#: functions.php:45 functions.php:72
+msgid "Homepage"
+msgstr "ホームページ"
+
+#: footer.php:41
+msgid "Theme: %1$s by %2$s."
+msgstr "Theme: %1$s by %2$s."
+
+#: footer.php:39
+msgid "Proudly powered by %s"
+msgstr "Proudly powered by %s"
+
+#: content-single.php:52
+msgid "Related Articles"
+msgstr "関連記事"
+
+#: footer.php:39
+msgid "A Semantic Personal Publishing Platform"
+msgstr "セマンティックなブログ／CMS プラットフォーム"
+
+#: content-single.php:40
+msgid "Tags: "
+msgstr "タグ:"
+
+#: content-attachment.php:15
+msgid "<p class=\"postmetadata\">Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%7$s</a></p>"
+msgstr "<p class=\"postmetadata\">Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> | <a href=\"%3$s\" title=\"フルサイズ画像へのリンク\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"%7$s へ戻る\" rel=\"gallery\">%7$s</a></p>"
+
+#: content-attachment.php:37
+msgid "&lsaquo; Back"
+msgstr "&lsaquo; 戻る"
+
+#: content-single.php:34
+msgid "Categories: "
+msgstr "カテゴリー:"
+
+#: content-archive.php:10 content-featured.php:12 content-featured.php:19
+#: content-home-loop.php:9 index.php:76
+msgid "Permalink to %s"
+msgstr "%s へのパーマリンク"
+
+#: comments.php:41
+msgid "Trackbacks"
+msgstr "トラックバック"
+
+#: comments.php:33
+msgid "Newer Comments &rsaquo;"
+msgstr "新しいコメント &rsaquo;"
+
+#: comments.php:23
+msgid "Leave a comment &rsaquo;"
+msgstr "コメントを書き込む &rsaquo;"
+
+#: comments.php:30
+msgid "&lsaquo; Older Comments"
+msgstr "&lsaquo; 過去のコメント"
+
+#: comments.php:10
+msgid "Please do not load this page directly. Thanks!"
+msgstr "このページに直接アクセスしないでください。よろしく !"
+
+#: comments.php:21
+msgid "1 reply"
+msgid_plural "%1$s replies"
+msgstr[0] "%1$s件の返信"
+
+#: author.php:13
+msgid "Author Archives"
+msgstr "投稿者アーカイブ"
+
+#: archive.php:101
+msgid "Not Found"
+msgstr "見つかりません"
+
+#: 404.php:15
+msgid "Sorry, but the page you are looking for has not been found. Try checking the URL for errors, then hit the refresh button in your browser."
+msgstr "お探しのページが見つかりません。URL が間違っていないかご確認ください。"
+
+#: 404.php:14
+msgid "Oops!"
+msgstr "おっと !"
+
+#: 404.php:13
+msgid "Error 404"
+msgstr "404 エラー"

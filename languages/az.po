@@ -1,0 +1,399 @@
+# Translation of Opti in Azerbaijani
+# This file is distributed under the same license as the Opti package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-10-28 03:22:52+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Opti\n"
+
+#: functions.php:693
+msgid "Posts navigation"
+msgstr "Yazı naviqasiyaları"
+
+#: archive.php:72
+msgid "Chats"
+msgstr "Söhbətlər"
+
+#: archive.php:68
+msgid "Audios"
+msgstr "Audiolar"
+
+#: archive.php:64
+msgid "Statuses"
+msgstr "Statuslar"
+
+#: archive.php:60
+msgid "Links"
+msgstr "Bağlantılar"
+
+#: archive.php:56
+msgid "Quotes"
+msgstr "Sitatlar"
+
+#: archive.php:52
+msgid "Videos"
+msgstr "Videolar"
+
+#: archive.php:49
+msgid "Images"
+msgstr "Təsvirlər"
+
+#: archive.php:45
+msgid "Galleries"
+msgstr "Qalereyalar"
+
+#: archive.php:41
+msgid "Asides"
+msgstr "Kənarlar"
+
+#: archive.php:37
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "İ"
+
+#: archive.php:37
+msgid "Year: %s"
+msgstr "Ay: %s"
+
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "Fİ"
+
+#: archive.php:29
+msgid "Day: %s"
+msgstr "Gün: %s"
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr "Ay: %s"
+
+#: archive.php:25
+msgid "Author: %s"
+msgstr "Müəllif: %s"
+
+#: functions.php:1209
+msgid "Page %s"
+msgstr "Səhifə %s"
+
+#: functions.php:686
+msgid "Older &rsaquo;"
+msgstr "Əski &rsaquo;"
+
+#: functions.php:687
+msgid "&lsaquo; Newer"
+msgstr "&lsaquo; Yeni"
+
+#: content-page.php:18 content-single.php:21 custom-page-fullwidth.php:30
+msgid "Pages: "
+msgstr "Səhifələr:"
+
+msgid "Full Width"
+msgstr "Tam Genişlik"
+
+msgid "An elegant magazine theme for WordPress, with a responsive design, and support for widgets, post thumbnails, custom headers and custom backgrounds."
+msgstr ""
+
+#: archive.php:76
+msgid "Archives"
+msgstr "Arxivlər"
+
+#: searchform.php:9
+msgid "Search"
+msgstr "Axtar"
+
+#: search.php:30
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Bağışlayın, axtarış kriteriyalarınıza uyğun gələn nəticə əldə edilmədi.Fərqli açar kəlmələrlə təkrar yoxlayın."
+
+#: index.php:29
+msgid "Recent Posts - page %d"
+msgstr ""
+
+#: index.php:56
+msgid "Featured Categories"
+msgstr "Xüsusi kateqoriyalar"
+
+#: index.php:68
+msgid "%s &rsaquo;"
+msgstr "%s &rsaquo;"
+
+#: search.php:13
+msgid "Search results for &#8216;<em>%s</em>&#8217;"
+msgstr "&#8216;<em>%s</em>&#8217; üçün axtarışın nəticələri"
+
+#: index.php:23
+msgid "Recent Posts"
+msgstr "Son Yazılar"
+
+#: includes/postmetadata.php:10
+msgid "<span class=\"byline\">By <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span> <em>on</em> <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\">%4$s</time></a>"
+msgstr ""
+
+#: includes/postmetadata.php:16
+msgid "View all posts by %s"
+msgstr "%s tərəfindən yazılmış bütün yazılara bax"
+
+#: includes/pagination.php:10
+msgid "&lsaquo; Older Entries"
+msgstr "&lsaquo; Əski Yazılar"
+
+#: includes/pagination.php:13
+msgid "Newer Entries &rsaquo;"
+msgstr "Yeni Yazılar &rsaquo;"
+
+#: includes/administration.php:392
+msgid "Deselect All"
+msgstr "Heç birini seçmə"
+
+#: includes/administration.php:426
+msgid "default"
+msgstr "Mövcud"
+
+#: includes/administration.php:391
+msgid "Check All"
+msgstr "Tamamını seç"
+
+#: includes/administration.php:15 includes/administration.php:54
+msgid "Theme Options"
+msgstr "Mövzu parametrləri"
+
+#: functions.php:281
+msgctxt "Merriweather font: on or off"
+msgid "on"
+msgstr "açıq"
+
+#: functions.php:1063 functions.php:1067
+msgid "Page %d"
+msgstr "Səhifə %d"
+
+#: functions.php:922
+msgid "... <a href=\"%s\" class=\"read-more\">Read More &rsaquo;</a>"
+msgstr "... <a href=\"%s\" class=\"read-more\">Davamını oxu &rsaquo;</a>"
+
+#: functions.php:1046
+msgid "Search : "
+msgstr ""
+
+#: functions.php:1048
+msgid "404 Page not found"
+msgstr "404 SəhifəTapılmadı"
+
+#: functions.php:581
+msgid "Log in to reply"
+msgstr "Cavab yazmaq üçün daxil olun"
+
+#: functions.php:580
+msgid "Reply &darr;"
+msgstr "Cavabla &darr;"
+
+#: functions.php:569
+msgid "Your comment is awaiting moderation."
+msgstr "Şərhiniz yoxlama gözləyir."
+
+#: functions.php:560
+msgid "%1$s &bull; %2$s"
+msgstr "%1$s &bull; %2$s"
+
+#: functions.php:562 includes/edit.php:8
+msgid "Edit"
+msgstr "Redaktə et"
+
+#: functions.php:557
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr "<cite class=\"fn\">%s</cite>"
+
+#: functions.php:509 functions.php:947 header.php:30
+msgid "Home"
+msgstr "Əsas səhifə"
+
+#: functions.php:346
+msgid "Sidebar Widgets"
+msgstr "Yan menyu çubuğu Vidceti"
+
+#: functions.php:358
+msgid "Left Footer Widgets"
+msgstr "Sol Zirzəmi Vidceti"
+
+#: functions.php:370
+msgid "Left Middle Footer Widgets"
+msgstr "Sol Orta Zirzəmi Vidceti"
+
+#: functions.php:382
+msgid "Right Middle Footer Widgets"
+msgstr "Sağ Orta Zirzəmi Vidceti"
+
+#: functions.php:394
+msgid "Right Footer Widgets"
+msgstr "Sağ Zirzəmi Vidceti"
+
+#: functions.php:455
+msgid "Continue reading &rarr;"
+msgstr "Oxumağa davam et &rarr;"
+
+#: functions.php:197
+msgid "Header Position:"
+msgstr "Başlıq Mövqeyi:"
+
+#: functions.php:201
+msgid "Below Navigation (default)"
+msgstr ""
+
+#: functions.php:202
+msgid "In Header"
+msgstr ""
+
+#: functions.php:328
+msgid "Main Navigation"
+msgstr "Əsas Naviqasiya"
+
+#: functions.php:329
+msgid "Sub Navigation"
+msgstr "Alt Naviqasiya"
+
+#: functions.php:87
+msgid "Number of featured posts to display on the homepage in the featured categories section."
+msgstr ""
+
+#: functions.php:90
+msgid "Display Related Posts"
+msgstr "Oxşar Yazıları Göstər"
+
+#: functions.php:94
+msgid "Would you like to display the related posts on single post pages?"
+msgstr "Oxşar yazı səhifələrində oxşar yazıları göstərmək istəyirsinizmi?"
+
+#: functions.php:172
+msgid "Content Background Color"
+msgstr "Mühtəviyyat Arxa fon Rəngi"
+
+#: functions.php:173
+msgid "Content Link Color"
+msgstr "Mühtəviyyat Bağlantı Rəngi"
+
+#: functions.php:77
+msgid "Note: You need to upload and select an image for this to take effect."
+msgstr ""
+
+#: functions.php:80
+msgid "Featured Posts"
+msgstr "Xüsusi Yazılar"
+
+#: functions.php:54
+msgid "Hide the homepage categories listing"
+msgstr "Əsas Səhifə kateqoriyalarının siyahısını gizlət"
+
+#: functions.php:57
+msgid "Homepage Categories"
+msgstr "Əsas Səhifə Kateqoriyaları"
+
+#: functions.php:64
+msgid "Categories to display on the left hand side of the homepage. Deselect all of them to automatically select posts from the categories with the most content."
+msgstr ""
+
+#: functions.php:67
+msgid "Display Header Image on"
+msgstr ""
+
+#: functions.php:73
+msgid "All Pages"
+msgstr "Bütün səhifələr"
+
+#: functions.php:50
+msgid "Display Homepage Categories"
+msgstr "Əsas Səhifə Kateqoriyalarını Göstər"
+
+#: functions.php:14
+msgid "Opti Options"
+msgstr ""
+
+#: functions.php:45 functions.php:72
+msgid "Homepage"
+msgstr "Əsas Səhifə"
+
+#: footer.php:41
+msgid "Theme: %1$s by %2$s."
+msgstr "Mövzu: %1$s tərəfindən %2$s."
+
+#: footer.php:39
+msgid "Proudly powered by %s"
+msgstr "%s qürurla təqdim edər"
+
+#: content-single.php:52
+msgid "Related Articles"
+msgstr "Oxşar Məqalələr"
+
+#: footer.php:39
+msgid "A Semantic Personal Publishing Platform"
+msgstr "Müasir Fərdi Yayın Platforması"
+
+#: content-single.php:40
+msgid "Tags: "
+msgstr "Etiketlər:"
+
+#: content-attachment.php:15
+msgid "<p class=\"postmetadata\">Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%7$s</a></p>"
+msgstr "<p class=\"postmetadata\"><span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\"> pubdate>%2$s</time></span> tarixində <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> üzərində <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%7$s</a> içində dərc edilmişdir</p>"
+
+#: content-attachment.php:37
+msgid "&lsaquo; Back"
+msgstr "&lsaquo; Geri"
+
+#: content-single.php:34
+msgid "Categories: "
+msgstr "Kateqoriyalar:"
+
+#: content-archive.php:10 content-featured.php:12 content-featured.php:19
+#: content-home-loop.php:9 index.php:76
+msgid "Permalink to %s"
+msgstr "%s üçün daimi bağlantı"
+
+#: comments.php:41
+msgid "Trackbacks"
+msgstr "Geri izləmələr"
+
+#: comments.php:33
+msgid "Newer Comments &rsaquo;"
+msgstr "Yeni Şərhlər &rsaquo;"
+
+#: comments.php:23
+msgid "Leave a comment &rsaquo;"
+msgstr "Bir şərh yazın &rsaquo;"
+
+#: comments.php:30
+msgid "&lsaquo; Older Comments"
+msgstr "&lsaquo; Əski Şərhlər"
+
+#: comments.php:10
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Xahiş edirik bu səhifəni birbaşa yükləməyəsiniz. Təşəkkürlər!"
+
+#: comments.php:21
+msgid "1 reply"
+msgid_plural "%1$s replies"
+msgstr[0] "1 cavab"
+msgstr[1] "%1$s cavab"
+
+#: author.php:13
+msgid "Author Archives"
+msgstr "Müəllif Arxivləri"
+
+#: archive.php:101
+msgid "Not Found"
+msgstr "Tapılmadı"
+
+#: 404.php:15
+msgid "Sorry, but the page you are looking for has not been found. Try checking the URL for errors, then hit the refresh button in your browser."
+msgstr "Bağışlayın, amma axtardığınız səhifə tapılmadı. Xətalar üçün URL-ı yoxlayın, sonra brauzerinizdəki yenilə düyməsinə basın."
+
+#: 404.php:14
+msgid "Oops!"
+msgstr "Vay!"
+
+#: 404.php:13
+msgid "Error 404"
+msgstr "404 Xətası"

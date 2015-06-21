@@ -1,0 +1,156 @@
+@import 'base.less';
+
+
+//SUBSCRIBE FORM
+#feedburner-email-subscription-2 {
+	p {
+		margin: 5px 0;
+	}
+	#subscribe-email,
+	#subscribe-submit{
+		padding-left: 1%;
+	}
+	label {
+      display: none;
+	}
+
+    input,
+    button {
+		box-sizing: border-box;
+		border-radius: 100em;
+	    width: 100%;
+	    padding: 7px 12px;
+	    border-style: solid;
+	    border-width: 1px;
+	    border-color: #a0a0a0 #c7c7c7 #c7c7c7 #a0a0a0;
+	    font-size: 12px;
+	    color: #0092cc;
+	    background: white;
+	    &:hover {
+		    cursor: pointer;
+		    background: darken(white, 5%);
+	    }
+	}
+}
+
+//CUSTOM SIDEBAR
+.quick-links {
+	overflow: hidden;
+	.widget-wrap {
+		border-bottom: 1px solid #b0b0b0;
+	    padding-bottom: 25px;
+	}
+	.fb_iframe_widget {
+		width: 210px;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+#nav-primary.menu {
+  position: relative;
+  z-index: 100;
+  margin-top: -4px !important;
+}
+h2#description, #logo {
+  margin-left: 0;
+  margin-right: 0;
+}
+.global-header {
+  position: relative;
+  #branding {
+    left: 33%;
+    padding: 0;
+    position: absolute;
+    top: 41%;
+    width: 100%;
+
+    .copy-block {
+      padding: .5% 2%;
+      background: white;
+      text-align: left;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .global-header {
+    #branding {
+      position: relative;
+      top: -4px;
+      left: 0;
+      .copy-block {
+        position: static;
+      }
+      h1#logo {
+        line-height: 120%;
+        padding: 2px 0 0;
+      }
+    }
+
+  }
+}
+
+#nav-primary {
+  li {
+    display: table;
+    width: 22%;
+    height: 40px;
+    &:first-child {
+      width: 60px;
+      background-position: center;
+    }
+    &:last-child {
+      width: 60px;
+    }
+  }
+  a {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  h2#description {
+    font-size: 11px;
+  }
+}
+
+@media handheld, only screen and (max-width: 767px)  {
+  h1#logo {
+    line-height: 0;
+    padding: 20px 0;
+  }
+
+
+}
+
+@media only screen and (max-width: 767px) {
+  .copy-block {
+    max-width: 500px;
+  }
+  header h1, header h3 a {
+    font-size: 16px !important;
+  }
+
+  .global-header #branding .copy-block {
+    padding: 5px 2%;
+  }
+
+}
+@media only screen and (max-width: 1065px) {
+  header h1, header h3 a {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1065px) {
+  h2#description {
+    font-size: 13px;
+  }
+}
+
+

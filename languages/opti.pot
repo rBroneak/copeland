@@ -1,0 +1,443 @@
+# Copyright (C) 2014 Pro Theme Design
+# This file is distributed under the GNU General Public License v2.0 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Opti 1.0.01\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/opti\n"
+"POT-Creation-Date: 2014-10-28 03:22:50+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:13
+msgid "Error 404"
+msgstr ""
+
+#: 404.php:14
+msgid "Oops!"
+msgstr ""
+
+#: 404.php:15
+msgid ""
+"Sorry, but the page you are looking for has not been found. Try checking the "
+"URL for errors, then hit the refresh button in your browser."
+msgstr ""
+
+#: archive.php:25
+msgid "Author: %s"
+msgstr ""
+
+#: archive.php:29
+msgid "Day: %s"
+msgstr ""
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr ""
+
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: archive.php:37
+msgid "Year: %s"
+msgstr ""
+
+#: archive.php:37
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: archive.php:41
+msgid "Asides"
+msgstr ""
+
+#: archive.php:45
+msgid "Galleries"
+msgstr ""
+
+#: archive.php:49
+msgid "Images"
+msgstr ""
+
+#: archive.php:52
+msgid "Videos"
+msgstr ""
+
+#: archive.php:56
+msgid "Quotes"
+msgstr ""
+
+#: archive.php:60
+msgid "Links"
+msgstr ""
+
+#: archive.php:64
+msgid "Statuses"
+msgstr ""
+
+#: archive.php:68
+msgid "Audios"
+msgstr ""
+
+#: archive.php:72
+msgid "Chats"
+msgstr ""
+
+#. #-#-#-#-#  opti.pot (Opti 1.0.01)  #-#-#-#-#
+#. Template Name of the plugin/theme
+#: archive.php:76
+msgid "Archives"
+msgstr ""
+
+#: archive.php:101
+msgid "Not Found"
+msgstr ""
+
+#: author.php:13
+msgid "Author Archives"
+msgstr ""
+
+#: comments.php:10
+msgid "Please do not load this page directly. Thanks!"
+msgstr ""
+
+#: comments.php:21
+msgid "1 reply"
+msgid_plural "%1$s replies"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:23
+msgid "Leave a comment &rsaquo;"
+msgstr ""
+
+#: comments.php:30
+msgid "&lsaquo; Older Comments"
+msgstr ""
+
+#: comments.php:33
+msgid "Newer Comments &rsaquo;"
+msgstr ""
+
+#: comments.php:41
+msgid "Trackbacks"
+msgstr ""
+
+#: content-archive.php:10 content-featured.php:12 content-featured.php:19
+#: content-home-loop.php:9 index.php:76
+msgid "Permalink to %s"
+msgstr ""
+
+#: content-attachment.php:15
+msgid ""
+"<p class=\"postmetadata\">Published <span class=\"entry-date\"><time class="
+"\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" "
+"title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" "
+"title=\"Return to %7$s\" rel=\"gallery\">%7$s</a></p>"
+msgstr ""
+
+#: content-attachment.php:37
+msgid "&lsaquo; Back"
+msgstr ""
+
+#: content-page.php:18 content-single.php:21 custom-page-fullwidth.php:30
+msgid "Pages: "
+msgstr ""
+
+#: content-single.php:34
+msgid "Categories: "
+msgstr ""
+
+#: content-single.php:40
+msgid "Tags: "
+msgstr ""
+
+#: content-single.php:52
+msgid "Related Articles"
+msgstr ""
+
+#: footer.php:39
+msgid "A Semantic Personal Publishing Platform"
+msgstr ""
+
+#: footer.php:39
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:41
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:14
+msgid "Opti Options"
+msgstr ""
+
+#: functions.php:45 functions.php:72
+msgid "Homepage"
+msgstr ""
+
+#: functions.php:50
+msgid "Display Homepage Categories"
+msgstr ""
+
+#: functions.php:54
+msgid "Hide the homepage categories listing"
+msgstr ""
+
+#: functions.php:57
+msgid "Homepage Categories"
+msgstr ""
+
+#: functions.php:64
+msgid ""
+"Categories to display on the left hand side of the homepage. Deselect all of "
+"them to automatically select posts from the categories with the most content."
+msgstr ""
+
+#: functions.php:67
+msgid "Display Header Image on"
+msgstr ""
+
+#: functions.php:73
+msgid "All Pages"
+msgstr ""
+
+#: functions.php:77
+msgid "Note: You need to upload and select an image for this to take effect."
+msgstr ""
+
+#: functions.php:80
+msgid "Featured Posts"
+msgstr ""
+
+#: functions.php:87
+msgid ""
+"Number of featured posts to display on the homepage in the featured "
+"categories section."
+msgstr ""
+
+#: functions.php:90
+msgid "Display Related Posts"
+msgstr ""
+
+#: functions.php:94
+msgid "Would you like to display the related posts on single post pages?"
+msgstr ""
+
+#: functions.php:172
+msgid "Content Background Color"
+msgstr ""
+
+#: functions.php:173
+msgid "Content Link Color"
+msgstr ""
+
+#: functions.php:197
+msgid "Header Position:"
+msgstr ""
+
+#: functions.php:201
+msgid "Below Navigation (default)"
+msgstr ""
+
+#: functions.php:202
+msgid "In Header"
+msgstr ""
+
+#. Translators: If there are characters in your language that are not
+#. 	 * supported by Merriweather, translate this to 'off'. Do not translate
+#. into your
+#. 	 * own language.
+#: functions.php:281
+msgctxt "Merriweather font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:328
+msgid "Main Navigation"
+msgstr ""
+
+#: functions.php:329
+msgid "Sub Navigation"
+msgstr ""
+
+#: functions.php:346
+msgid "Sidebar Widgets"
+msgstr ""
+
+#: functions.php:358
+msgid "Left Footer Widgets"
+msgstr ""
+
+#: functions.php:370
+msgid "Left Middle Footer Widgets"
+msgstr ""
+
+#: functions.php:382
+msgid "Right Middle Footer Widgets"
+msgstr ""
+
+#: functions.php:394
+msgid "Right Footer Widgets"
+msgstr ""
+
+#: functions.php:455
+msgid "Continue reading &rarr;"
+msgstr ""
+
+#: functions.php:509 functions.php:947 header.php:30
+msgid "Home"
+msgstr ""
+
+#: functions.php:557
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: functions.php:560
+msgid "%1$s &bull; %2$s"
+msgstr ""
+
+#: functions.php:562 includes/edit.php:8
+msgid "Edit"
+msgstr ""
+
+#: functions.php:569
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:580
+msgid "Reply &darr;"
+msgstr ""
+
+#: functions.php:581
+msgid "Log in to reply"
+msgstr ""
+
+#: functions.php:686
+msgid "Older &rsaquo;"
+msgstr ""
+
+#: functions.php:687
+msgid "&lsaquo; Newer"
+msgstr ""
+
+#: functions.php:693
+msgid "Posts navigation"
+msgstr ""
+
+#: functions.php:922
+msgid "... <a href=\"%s\" class=\"read-more\">Read More &rsaquo;</a>"
+msgstr ""
+
+#: functions.php:1046
+msgid "Search : "
+msgstr ""
+
+#: functions.php:1048
+msgid "404 Page not found"
+msgstr ""
+
+#: functions.php:1063 functions.php:1067
+msgid "Page %d"
+msgstr ""
+
+#: functions.php:1209
+msgid "Page %s"
+msgstr ""
+
+#: includes/administration.php:15 includes/administration.php:54
+msgid "Theme Options"
+msgstr ""
+
+#: includes/administration.php:391
+msgid "Check All"
+msgstr ""
+
+#: includes/administration.php:392
+msgid "Deselect All"
+msgstr ""
+
+#: includes/administration.php:426
+msgid "default"
+msgstr ""
+
+#: includes/pagination.php:10
+msgid "&lsaquo; Older Entries"
+msgstr ""
+
+#: includes/pagination.php:13
+msgid "Newer Entries &rsaquo;"
+msgstr ""
+
+#: includes/postmetadata.php:10
+msgid ""
+"<span class=\"byline\">By <span class=\"author vcard\"><a class=\"url fn n\" "
+"href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span> <em>on</"
+"em> <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date"
+"\" datetime=\"%3$s\">%4$s</time></a>"
+msgstr ""
+
+#: includes/postmetadata.php:16
+msgid "View all posts by %s"
+msgstr ""
+
+#: index.php:23
+msgid "Recent Posts"
+msgstr ""
+
+#: index.php:29
+msgid "Recent Posts - page %d"
+msgstr ""
+
+#: index.php:56
+msgid "Featured Categories"
+msgstr ""
+
+#: index.php:68
+msgid "%s &rsaquo;"
+msgstr ""
+
+#: search.php:13
+msgid "Search results for &#8216;<em>%s</em>&#8217;"
+msgstr ""
+
+#: search.php:30
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: searchform.php:9
+msgid "Search"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Opti"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://www.prothemedesign.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"An elegant magazine theme for WordPress, with a responsive design, and "
+"support for widgets, post thumbnails, custom headers and custom backgrounds."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Pro Theme Design"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://prothemedesign.com"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full Width"
+msgstr ""
