@@ -219,17 +219,20 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
 
                     if (isset($catName)) {
                         //It exists
-                        echo '<h2>texas'.$paged.$catName.'</h2>';
-                        $the_query = new WP_Query(array('category__and'=>array($askTomCatNum,$catName)));
-
-                        if ( in_category( 'ask-tom') ) {
-                            while( $the_query->have_posts() ) {
-                                $the_query->the_post();
-                                get_template_part( 'content', 'ask-tom-archive' );
-
-                            }
-                            wp_reset_postdata();
+                        //echo '<h2>texas'.$paged.$catName.'</h2>';
+                        $tom_query = new WP_Query();
+                        $args = array(
+                            'posts_per_page' => 10,
+                            'cat' => $askTomCatNum,
+                            'category__in' => array( $catName ),
+                            'paged' => $paged
+                        );
+                        $tom_query  = new WP_Query( $args );
+                        while( $tom_query->have_posts() ) {
+                            $tom_query->the_post();
+                            get_template_part( 'content', 'archive' );
                         }
+                        wp_reset_postdata();
 
                     } else {
                         //It Doensnt exists
@@ -242,7 +245,7 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
                         $tom_query  = new WP_Query( $args );
                         //$tom_query->query('cat=950&posts_per_page='.get_option('posts_per_page').'&paged=' . $paged);
 
-                        echo '<h2>'.$paged.'</h2>';
+                        //echo '<h2>'.$paged.'</h2>';
                         if ( in_category( 'ask-tom') ) {
                             while( $tom_query->have_posts() ) {
                                 $tom_query->the_post();
@@ -271,33 +274,51 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
                         </article>
                         <?php wp_reset_postdata(); ?>
                     <?php
-                    } ?>
+                    }
 
-                    <?php
+                    $queryString = $_SERVER['QUERY_STRING'];
+                    $queryCat = get_cat_ID( $queryString );
+                    $catName = $_GET['cat'];
+
+                    if (isset($catName)) {
                         $tom_query = new WP_Query();
                         $args = array(
-                            'cat' => get_cat_ID( $title ),
                             'posts_per_page' => 10,
-                            'category__not_in' => 950,
+                            'cat' => $title,
+                            'category__in' => array( $catName ),
                             'paged' => $paged
                         );
-                        $tom_query  = new WP_Query( $args );
-                        while( $tom_query->have_posts() ) {
-                            $tom_query->the_post();
-                            get_template_part( 'content', 'archive' );
+                            $tom_query  = new WP_Query( $args );
+                            while( $tom_query->have_posts() ) {
+                                $tom_query->the_post();
+                                get_template_part( 'content', 'archive' );
+                            }
+                            wp_reset_postdata();
+                        } else {
+                            $tom_query = new WP_Query();
+                            $args = array(
+                                'cat' => get_cat_ID( $title ),
+                                'posts_per_page' => 10,
+                                'category__not_in' => 950,
+                                'paged' => $paged
+                            );
+                            $tom_query  = new WP_Query( $args );
+                            while( $tom_query->have_posts() ) {
+                                $tom_query->the_post();
+                                get_template_part( 'content', 'archive' );
 
+                            }
+                            wp_reset_postdata();
                         }
-                        wp_reset_postdata();
-
                     ?>
                 </section>
             </div>
-        <?php }
-            next_posts_link( 'Older Posts', $max_pages );
-            previous_posts_link( 'Newer Posts' );
+        <?php } ?>
 
+        <div class="nav-previous pull-left"><?php next_posts_link( 'Older posts' , $max_pages ); ?></div>
+        <div class="nav-next pull-right"><?php previous_posts_link( 'Newer posts' , $max_pages ); ?></div>
 
-		} else {
+		<?php } else {
 ?>
             <h2><?php _e( 'Not Found', 'opti' ); ?></h2>
 <?php
@@ -310,6 +331,10 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
 <script type="text/javascript">
 /*
 (function($){
+     if (jQuery('article').length < 10) {
+        jQuery('.nav-previous').hide()
+     }
+ })(jQuery)
         var article = $('.category-ask-tom .tom article');
 		article.hide();
 

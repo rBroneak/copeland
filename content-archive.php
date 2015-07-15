@@ -28,9 +28,3 @@
 		</section>
 	</div>
 </article>
-
-
-
-
-
-

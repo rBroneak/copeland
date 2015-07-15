@@ -476,7 +476,6 @@ h1 {
 h1.pagetitle {
   border-bottom: 1px solid #d7d7d7;
   padding-bottom: 9px;
-  font-size: 1.4em;
 }
 h1.posttitle {
   font-size: 1.75em;
@@ -1720,6 +1719,12 @@ h2#description {
   display: block;
   margin: 0 auto;
 }
+aside.fourcol.last .tom-title {
+  font-size: 17px;
+}
+aside.fourcol .wrap {
+  margin-top: 20px;
+}
 #nav-primary.menu {
   position: relative;
   z-index: 100;
@@ -1812,4 +1817,8 @@ h2#description,
   h2#description {
     font-size: 13px;
   }
+}
+footer .widget select {
+  width: 100%;
+  margin-top: 8px;
 }

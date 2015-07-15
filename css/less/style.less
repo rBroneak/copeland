@@ -46,7 +46,16 @@
 		margin: 0 auto;
 	}
 }
-
+aside.fourcol {
+  &.last {
+    .tom-title {
+      font-size: 17px;
+    }
+  }
+  .wrap {
+    margin-top: 20px;
+  }
+}
 #nav-primary.menu {
   position: relative;
   z-index: 100;
@@ -150,6 +159,13 @@ h2#description, #logo {
 @media screen and (min-width: 1065px) {
   h2#description {
     font-size: 13px;
+  }
+}
+
+footer {
+  .widget select {
+    width: 100%;
+    margin-top: 8px;
   }
 }
 

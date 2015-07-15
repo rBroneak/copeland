@@ -1266,3 +1266,17 @@ function foo_modify_query_exclude_category( $query ) {
     if ( ! is_admin() && $query->is_home() && $query->is_main_query() && ! $query->get( 'cat' ) )
         $query->set( 'cat', '-950' );
 }
+add_filter('found_posts', 'myprefix_adjust_offset_pagination', 1, 2 );
+
+function myprefix_adjust_offset_pagination($found_posts, $query) {
+
+    //Define our offset again...
+    $offset = 10;
+
+    //Ensure we're modifying the right query object...
+    if ( $query->is_posts_page ) {
+        //Reduce WordPress's found_posts count by the offset...
+        return $found_posts - $offset;
+    }
+    return $found_posts;
+}
