@@ -156,7 +156,6 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
              }
         }?>
 
-
 		<?php if ($title == 'Ask Tom') {
 
                 $pcat = $_GET['cat'];
@@ -243,8 +242,16 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
            <?php } else { ?>
             <div class="masonry-wrapper">
                 <section class="not-tom full-width">
-                  <?php
-//                  if (in_category( 'Ask Tom' )) { ?>
+                    <?php
+                    if(is_archive() && !is_category() ) {
+                        while ( have_posts() ) {
+                            the_post();
+                            get_template_part( 'content', 'archive' );
+
+                        }
+
+                    } else {
+                    ?>
                         <article class="ask-tom-link">
                             <div class="excerpt-wrap">
                                 <h2 class="posttitle">See <a href="category/ask-tom/?cat=<?php echo $cat; ?>" rel="bookmark"><?php echo $title; ?></a> Questions and Answers in Ask Tom</h2>
@@ -254,61 +261,56 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
                             </div>
                         </article>
                         <?php wp_reset_postdata(); ?>
-<!--                      }-->
                     <?php
-
-
                     $queryString = $_SERVER['QUERY_STRING'];
                     $queryCat = get_cat_ID( $queryString );
                     $catName = $_GET['cat'];
 
-                    if (isset($catName)) {
-                        $tom_query = new WP_Query();
-                        $args = array(
-                            'posts_per_page' => 10,
-                            'cat' => $title,
-                            'category__in' => array( $catName ),
-                            'paged' => $paged
-                        );
-                            $tom_query  = new WP_Query( $args );
-                            while( $tom_query->have_posts() ) {
-                                $tom_query->the_post();
-                                get_template_part( 'content', 'archive' );
-                            }
-                            wp_reset_postdata();
-                        } else {
+                        if (isset($catName)) {
                             $tom_query = new WP_Query();
                             $args = array(
-                                'cat' => get_cat_ID( $title ),
                                 'posts_per_page' => 10,
-                                'category__not_in' => 950,
+                                'cat' => $title,
+                                'category__in' => array( $catName ),
                                 'paged' => $paged
                             );
-                            $tom_query  = new WP_Query( $args );
-                            while( $tom_query->have_posts() ) {
-                                $tom_query->the_post();
-                                get_template_part( 'content', 'archive' );
+                                $tom_query  = new WP_Query( $args );
+                                while( $tom_query->have_posts() ) {
+                                    $tom_query->the_post();
+                                    get_template_part( 'content', 'archive' );
+                                }
+                                wp_reset_postdata();
+                            } else {
+                                $tom_query = new WP_Query();
+                                $args = array(
+                                    'cat' => get_cat_ID( $title ),
+                                    'posts_per_page' => 10,
+                                    'category__not_in' => 950,
+                                    'paged' => $paged
+                                );
+                                $tom_query  = new WP_Query( $args );
+                                while( $tom_query->have_posts() ) {
+                                    $tom_query->the_post();
+                                    get_template_part( 'content', 'archive' );
 
+                                }
+                                wp_reset_postdata();
                             }
-                            wp_reset_postdata();
-                        }
+                    }
                     ?>
                 </section>
             </div>
         <?php } ?>
-
         <div class="nav-previous pull-left"><?php next_posts_link( 'Older posts' , $max_pages ); ?></div>
         <div class="nav-next pull-right"><?php previous_posts_link( 'Newer posts' , $max_pages ); ?></div>
 
-		<?php } else {
-?>
+		<?php } else { ?>
             <h2><?php _e( 'Not Found', 'opti' ); ?></h2>
-<?php
-		}
-
-?>
-	</div>
-	<?php get_sidebar(); ?>
+        <?php
+		    }
+        ?>
+</div>
+<?php get_sidebar(); ?>
 </section>
 <script type="text/javascript">
 /*
