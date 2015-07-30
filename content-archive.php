@@ -15,6 +15,9 @@
 			if ( get_the_post_thumbnail( get_the_ID(), 'opti-archive' ) ) {
 				the_post_thumbnail( 'opti-archive' );
 			}
+            if ( in_category( 'ask-tom' )) { ?>
+                <img src="http://tcbdev.com/wp-content/uploads/2015/07/ask-tom-qanda.png" alt="Ask Tom QA">
+            <?php }
 		?>
 		</a>
 	</div>

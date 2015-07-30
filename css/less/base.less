@@ -37,6 +37,7 @@ TABLE OF CONTENTS
 body,
 html {
 	min-height:101%; /*Firefox scrollbar fix*/
+  overflow-x: hidden;
 }
 
 body {
@@ -949,8 +950,19 @@ a.post-edit-link:visited {
 	box-sizing:border-box;
 	min-height:6.5em;
 }
+.archive {
+  .ask-tom {
+    border: 1px solid #d7d7d7;
+    border-top: none;
+  }
+}
+.ask-tom-link {
+
+  background: #efefef;
+}
 .ask-tom-link .excerpt-wrap{
 	border-bottom: none;
+    padding: 15px 12px 30px;
 }
 .archive {
 	.full-width {
@@ -1867,9 +1879,7 @@ h2#description {
 		}
 	}
 }
-.index-list .categories > ul > li > .children {
-	margin-bottom: 20px;
-}
+
 .index-list {
 	
 	li {

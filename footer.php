@@ -42,7 +42,7 @@
 <?php wp_footer(); ?>
 <script type="text/javascript">
     (function($){
-        jQuery('.tom .excerpt-wrap .posttitle').next('p').prepend('<strong><em>Answer:</em></strong> ');
+        jQuery('.tom .excerpt-wrap .postmetadata').next('p').prepend('<strong><em>Answer:</em></strong> ');
 
             if (jQuery('article').length < 10) {
                 jQuery('.nav-previous').hide()

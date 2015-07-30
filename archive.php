@@ -156,12 +156,14 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
              }
         }?>
 
-		<?php if ($title == 'Ask Tom') {
+		<?php
+            $pcat = $_GET['cat'];
 
-                $pcat = $_GET['cat'];
+            if ( $title == 'Ask Tom'  ) {
+
                 $childcats = get_categories('child_of=' . $pcat . '&hide_empty=1');
 
-                if (count($childcats) > 0 ) {
+                if (count($childcats) > 0 && isset($pcat) ) {
                     echo '<nav class="menu clearfloat" id="nav-lower">
 						<section class="clearfloat">
 							<div class="menu-subcategories-container">
@@ -185,6 +187,7 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
 					  </section>
 					</nav>';
                 }
+
                 ?>
                 <div class="">
                     <section class="tom full-width">
@@ -204,6 +207,7 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
                         $args = array(
                             'posts_per_page' => 10,
                             'cat' => $askTomCatNum,
+                            'category__in' => $catName,
                             'paged' => $paged
                         );
                         $tom_query  = new WP_Query( $args );
@@ -218,13 +222,11 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
                         $tom_query = new WP_Query();
                         $args = array(
                             'posts_per_page' => 10,
-                            'category' => 950,
+                            'cat' => 950,
                             'paged' => $paged
                         );
                         $tom_query  = new WP_Query( $args );
-                        //$tom_query->query('cat=950&posts_per_page='.get_option('posts_per_page').'&paged=' . $paged);
 
-                        //echo '<h2>'.$paged.'</h2>';
                         if ( in_category( 'ask-tom') ) {
                             while( $tom_query->have_posts() ) {
                                 $tom_query->the_post();
@@ -249,22 +251,37 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
                             get_template_part( 'content', 'archive' );
 
                         }
-
                     } else {
-                    ?>
-                        <article class="ask-tom-link">
-                            <div class="excerpt-wrap">
-                                <h2 class="posttitle">See <a href="category/ask-tom/?cat=<?php echo $cat; ?>" rel="bookmark"><?php echo $title; ?></a> Questions and Answers in Ask Tom</h2>
-                            </div>
-                            <div class="excerpt-wrap">
-                                <h2 class="posttitle">See All<a href="category/ask-tom/"> Ask Tom</a> Questions and Answers</h2>
-                            </div>
-                        </article>
-                        <?php wp_reset_postdata(); ?>
-                    <?php
-                    $queryString = $_SERVER['QUERY_STRING'];
-                    $queryCat = get_cat_ID( $queryString );
-                    $catName = $_GET['cat'];
+                        $args = array(
+                            'category__and' => array( $cat, 950 )
+                        );
+
+                        $my_query = new WP_Query( $args );
+                        $inTom = False;
+                        while( $my_query->have_posts() ):
+                            $my_query->the_post();
+                            $inTom = True;
+                        endwhile;
+
+                        wp_reset_postdata();
+
+                        if ($inTom) { ?>
+                            <article class="ask-tom-link">
+                                <div class="excerpt-wrap">
+                                    <h2 class="posttitle">See <a href="/category/ask-tom/?cat=<?php echo $cat; ?>" rel="bookmark"><?php echo $title; ?></a> Questions and Answers</h2>
+                                </div>
+                                <div class="excerpt-wrap">
+                                    <h2 class="posttitle">See All<a href="/category/ask-tom"> Ask Tom</a> Questions and Answers</h2>
+                                </div>
+                            </article>
+                        <?php } ?>
+
+
+                        <?php wp_reset_postdata();
+
+                        $queryString = $_SERVER['QUERY_STRING'];
+                        $queryCat = get_cat_ID( $queryString );
+                        $catName = $_GET['cat'];
 
                         if (isset($catName)) {
                             $tom_query = new WP_Query();

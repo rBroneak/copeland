@@ -83,6 +83,7 @@ html {
   min-height: 101%;
   /*Firefox scrollbar fix*/
 
+  overflow-x: hidden;
 }
 body {
   background: #FFF;
@@ -893,8 +894,16 @@ a.post-edit-link:visited {
   box-sizing: border-box;
   min-height: 6.5em;
 }
+.archive .ask-tom {
+  border: 1px solid #d7d7d7;
+  border-top: none;
+}
+.ask-tom-link {
+  background: #efefef;
+}
 .ask-tom-link .excerpt-wrap {
   border-bottom: none;
+  padding: 15px 12px 30px;
 }
 .archive .full-width article {
   width: 100%;
@@ -1666,9 +1675,6 @@ h2#description {
 .widget.widget_categories .children {
   display: none;
 }
-.index-list .categories > ul > li > .children {
-  margin-bottom: 20px;
-}
 .index-list li {
   list-style-type: none;
   margin: 5px 0;
@@ -1742,7 +1748,7 @@ h2#description,
   left: 33%;
   padding: 0;
   position: absolute;
-  top: 41%;
+  top: 48%;
   width: 100%;
 }
 .global-header #branding .copy-block {
