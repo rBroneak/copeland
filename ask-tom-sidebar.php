@@ -1,7 +1,7 @@
 <?php
 $category = get_the_category();
+?>
 
-if ( !in_category('Ask Tom')) { ?>
 
     <aside class="fourcol last ask-tom-widget">
         <div class="widget-wrap">
@@ -24,10 +24,6 @@ if ( !in_category('Ask Tom')) { ?>
             ?>
         </div>
     </aside>
-<?php
-} else {
 
-}
-?>
 
 

@@ -898,6 +898,10 @@ a.post-edit-link:visited {
   border: 1px solid #d7d7d7;
   border-top: none;
 }
+.archive.ask-tom .ask-tom {
+  border-left: none;
+  border-right: none;
+}
 .ask-tom-link {
   background: #efefef;
 }
@@ -1730,6 +1734,16 @@ aside.fourcol.last .tom-title {
 }
 aside.fourcol .wrap {
   margin-top: 20px;
+}
+aside.fourcol.ask-tom-widget {
+  border: 1px dashed #0092cc;
+}
+aside.fourcol.ask-tom-widget .widget-wrap {
+  border: none;
+}
+aside.fourcol.ask-tom-widget h3.widgettitle {
+  color: white;
+  background: #0092cc none repeat scroll 0 0;
 }
 #nav-primary.menu {
   position: relative;
