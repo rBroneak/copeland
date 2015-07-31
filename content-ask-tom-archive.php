@@ -17,6 +17,7 @@
 		<h2 class="posttitle">
 			<em>Question:</em> <?php the_title(); ?>
 		</h2>
+        <?php get_template_part( '/includes/postmetadata' ); ?>
 		<?php the_content(); ?>
 	</div>
 </article>
