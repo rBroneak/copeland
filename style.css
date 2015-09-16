@@ -898,6 +898,28 @@ a.post-edit-link:visited {
   border: 1px solid #d7d7d7;
   border-top: none;
 }
+.archive .category-top h2,
+.home .category-top h2 {
+  margin-top: 7%;
+}
+.archive .category-top .entry,
+.home .category-top .entry {
+  display: none;
+}
+.archive .category-top .postmetadata,
+.home .category-top .postmetadata {
+  display: none;
+}
+.archive #recent-excerpts li.category-top > h4,
+.home #recent-excerpts li.category-top > h4,
+.archive #recent-excerpts li.category-top p,
+.home #recent-excerpts li.category-top p {
+  display: none;
+}
+.archive #recent-excerpts li.category-top .excerpt h4,
+.home #recent-excerpts li.category-top .excerpt h4 {
+  margin-top: 7%;
+}
 .archive.ask-tom .ask-tom {
   border-left: none;
   border-right: none;
@@ -990,6 +1012,9 @@ aside .widget select {
 aside .widget-wrap li:last-child {
   padding-bottom: 0;
   border: 0;
+}
+.widget-wrap .cat-item-951 {
+  display: none;
 }
 /* ---------- @ Post Styles -----------*/
 p.postmetadata,
@@ -1688,6 +1713,18 @@ h2#description {
 }
 .index-list .children {
   margin-left: 20px;
+}
+.top-img {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border: 2px solid #fff;
+}
+.home-loop-addin {
+  float: left;
+  margin: 15px 15px 0 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  width: 90px;
+  height: auto;
+  border: 2px solid #fff;
 }
 #feedburner-email-subscription-2 p {
   margin: 5px 0;

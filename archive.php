@@ -1,21 +1,21 @@
-<?php
-/**
- * List content archive
- *
- * @package Opti
- */
+	<?php
+	/**
+	* List content archive
+	*
+	* @package Opti
+	*/
 
-get_header();
-//local http://$_SERVER[HTTP_HOST]/wordpress
-//live http://$_SERVER[HTTP_HOST]/
-$actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
+	get_header();
+	//local http://$_SERVER[HTTP_HOST]/wordpress
+	//live http://$_SERVER[HTTP_HOST]/
+	$actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
 
-?>
+	?>
 
-<section class="row">
+	<section class="row">
 	<div class="<?php opti_content_class(); ?>">
 		<?php
-        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 		if ( have_posts() ) {
 			if ( is_category() || is_tax( 'jetpack-portfolio-type' ) ) {
 
@@ -94,8 +94,6 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
 				echo '<h1 class="pagetitle">'.$title.'</h1>';
 			}
 		?>
-
-
 		<!-- SHOW SUBCAT MENUE -->
 		<?php
 		$category = get_category($catid);
@@ -111,12 +109,12 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
 								<ul class="nav">';
 								foreach ($childcats as $childcat) {
 								  if (cat_is_ancestor_of($ancestor, $childcat->cat_ID) == false) {
-								  	if ($queryCat != $childcat->cat_ID) {
-									    echo '<li><a href="'.get_category_link($cat).'/?cat='.$childcat->cat_ID.'">';
-									    echo $childcat->cat_name . '</a>';
-									    echo '</li>';
-									    $ancestor = $childcat->cat_ID;
-								    }
+									if ($queryCat != $childcat->cat_ID) {
+										echo '<li><a href="'.get_category_link($cat).'/?cat='.$childcat->cat_ID.'">';
+										echo $childcat->cat_name . '</a>';
+										echo '</li>';
+										$ancestor = $childcat->cat_ID;
+									}
 								  }
 								}
 								echo '</ul>
@@ -124,12 +122,12 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
 					  </section>
 					</nav>';
 			}
-			//SUB CATEGORY SUB NAV
+			//CHILD CATEGORY SUB NAV
 			 if ( is_subcategory() ) {
 			 $pcat = $_GET['cat'];
 			 $childcats = get_categories('child_of=' . $pcat . '&hide_empty=1');
 
-			 	if (count($childcats) > 0 ) {
+				if (count($childcats) > 0 ) {
 				echo '<nav class="menu clearfloat" id="nav-lower">
 						<section class="clearfloat">
 							<div class="menu-subcategories-container">
@@ -137,14 +135,14 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
 
 								foreach ($childcats as $childcat) {
 								  if (cat_is_ancestor_of($ancestor, $childcat->cat_ID) == false) {
-								    if ( $title != $childcat->cat_name) {
-								    	if ($pcat != $childcat->cat_ID) {
-										    echo '<li><a href="'.get_category_link($cat).'/?cat='.$childcat->cat_ID.'">';
-										    echo $childcat->cat_name . '</a>';
-										    echo '</li>';
-										    $ancestor = $childcat->cat_ID;
-									    }
-								    }
+									if ( $title != $childcat->cat_name) {
+										if ($pcat != $childcat->cat_ID) {
+											echo '<li><a href="'.get_category_link($cat).'/?cat='.$childcat->cat_ID.'">';
+											echo $childcat->cat_name . '</a>';
+											echo '</li>';
+											$ancestor = $childcat->cat_ID;
+										}
+									}
 
 								  }
 								}
@@ -152,191 +150,254 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
 							</div>
 					  </section>
 					</nav>';
-			    }
-             }
-        }?>
+				}
+			 }
+		}?>
+
+
+
+		<!-- END NAV -->
+
+
 
 		<?php
-            $pcat = $_GET['cat'];
+			$pcat = $_GET['cat'];
+			// ASK TOM SHORT CUT
+			if ( $title == 'Ask Tom'  ) {
+				$childcats = get_categories('child_of=' . $pcat . '&hide_empty=1');
+				if (count($childcats) > 0 && isset($pcat) ) {
+					echo '<nav class="menu clearfloat" id="nav-lower">
+							<section class="clearfloat">
+								<div class="menu-subcategories-container">
+									<ul class="nav">';
+					foreach ($childcats as $childcat) {
+						if (cat_is_ancestor_of($ancestor, $childcat->cat_ID) == false) {
+							if ( $title != $childcat->cat_name) {
+								if ($pcat != $childcat->cat_ID) {
+									echo '<li><a href="'.get_category_link($pcat).'/?cat='.$childcat->cat_ID.'">';
+									echo $childcat->cat_name . '</a>';
+									echo '</li>';
+									$ancestor = $childcat->cat_ID;
+								}
+							}
+						}
+					}
+					echo '</ul></div></section></nav>';
+				}// END ASK TOM SHORT CUT
 
-            if ( $title == 'Ask Tom'  ) {
+				?>
+				<!--
+					ASK TOM PAGES (parent and child)
+				-->
+				<div class="">
+					<section class="tom full-width">
+					<?php
+					//950 live
+					//892 local
+					$askTomCatNum = 950;
 
-                $childcats = get_categories('child_of=' . $pcat . '&hide_empty=1');
-
-                if (count($childcats) > 0 && isset($pcat) ) {
-                    echo '<nav class="menu clearfloat" id="nav-lower">
-						<section class="clearfloat">
-							<div class="menu-subcategories-container">
-								<ul class="nav">';
-
-                    foreach ($childcats as $childcat) {
-                        if (cat_is_ancestor_of($ancestor, $childcat->cat_ID) == false) {
-                            if ( $title != $childcat->cat_name) {
-                                if ($pcat != $childcat->cat_ID) {
-                                    echo '<li><a href="'.get_category_link($pcat).'/?cat='.$childcat->cat_ID.'">';
-                                    echo $childcat->cat_name . '</a>';
-                                    echo '</li>';
-                                    $ancestor = $childcat->cat_ID;
-                                }
-                            }
-
-                        }
-                    }
-                    echo '</ul>
-							</div>
-					  </section>
-					</nav>';
-                }
-
-                ?>
-                <div class="">
-                    <section class="tom full-width">
-                    <?php
-                    //950 live
-                    //892 local
-                    $askTomCatNum = 950;
-
-                    $queryString = $_SERVER['QUERY_STRING'];
-                    $queryCat = get_cat_ID( $queryString );
-                    $catName = $_GET['cat'];
-
-                    if (isset($catName)) {
-                        //It exists
-                        //echo '<h2>texas'.$paged.$catName.'</h2>';
-                        $tom_query = new WP_Query();
-                        $args = array(
-                            'posts_per_page' => 10,
-                            'cat' => $askTomCatNum,
-                            'category__in' => $catName,
-                            'paged' => $paged
-                        );
-                        $tom_query  = new WP_Query( $args );
-                        while( $tom_query->have_posts() ) {
-                            $tom_query->the_post();
-                            get_template_part( 'content', 'archive' );
-                        }
-                        wp_reset_postdata();
-
-                    } else {
-                        //It Doensnt exists
-                        $tom_query = new WP_Query();
-                        $args = array(
-                            'posts_per_page' => 10,
-                            'cat' => 950,
-                            'paged' => $paged
-                        );
-                        $tom_query  = new WP_Query( $args );
-
-                        if ( in_category( 'ask-tom') ) {
-                            while( $tom_query->have_posts() ) {
-                                $tom_query->the_post();
-                                get_template_part( 'content', 'ask-tom-archive' );
-
-                            }
-                            wp_reset_postdata();
-                        }
-
-                    }
-
-                ?>
-                    </section>
-            </div>
-           <?php } else { ?>
-            <div class="masonry-wrapper">
-                <section class="not-tom full-width">
-                    <?php
-                    if(is_archive() && !is_category() ) {
-                        while ( have_posts() ) {
-                            the_post();
-                            get_template_part( 'content', 'archive' );
-
-                        }
-                    } else {
-                        $args = array(
-                            'category__and' => array( $cat, 950 )
-                        );
-
-                        $my_query = new WP_Query( $args );
-                        $inTom = False;
-                        while( $my_query->have_posts() ):
-                            $my_query->the_post();
-                            $inTom = True;
-                        endwhile;
-
-                        wp_reset_postdata();
-
-                        if ($inTom) { ?>
-                            <article class="ask-tom-link">
-                                <div class="excerpt-wrap">
-                                    <h2 class="posttitle">See <a href="/category/ask-tom/?cat=<?php echo $cat; ?>" rel="bookmark"><?php echo $title; ?></a> Questions and Answers</h2>
-                                </div>
-                                <div class="excerpt-wrap">
-                                    <h2 class="posttitle">See All<a href="/category/ask-tom"> Ask Tom</a> Questions and Answers</h2>
-                                </div>
-                            </article>
-                        <?php } ?>
+					$queryString = $_SERVER['QUERY_STRING'];
+					$queryCat = get_cat_ID( $queryString );
+					$catName = $_GET['cat'];
 
 
-                        <?php wp_reset_postdata();
+					if (isset($catName)) {
+						//IF IS AN ASK TOM SUB CAT PAGE
+						$tom_query = new WP_Query();
+						$args = array(
+							'posts_per_page' => 10,
+							'cat' => $askTomCatNum,
+							'category__in' => $catName,
+							'paged' => $paged
+						);
+						$tom_query  = new WP_Query( $args );
+						while( $tom_query->have_posts() ) {
+							$tom_query->the_post();
+							get_template_part( 'content', 'archive' );
+						}
+						wp_reset_postdata();
 
-                        $queryString = $_SERVER['QUERY_STRING'];
-                        $queryCat = get_cat_ID( $queryString );
-                        $catName = $_GET['cat'];
+					} else {
+						//IT IS NOT AN ASK TOM SUB CAT PAGE
+						//echo '<h2>Test'.$paged.$catName.'</h2>';
+						$tom_query = new WP_Query();
+						$args = array(
+							'posts_per_page' => 10,
+							'cat' => 950,
+							'paged' => $paged
+						);
+						$tom_query  = new WP_Query( $args );
 
-                        if (isset($catName)) {
-                            $tom_query = new WP_Query();
-                            $args = array(
-                                'posts_per_page' => 10,
-                                'cat' => $title,
-                                'category__in' => array( $catName ),
-                                'paged' => $paged
-                            );
-                                $tom_query  = new WP_Query( $args );
-                                while( $tom_query->have_posts() ) {
-                                    $tom_query->the_post();
-                                    get_template_part( 'content', 'archive' );
-                                }
-                                wp_reset_postdata();
-                            } else {
-                                $tom_query = new WP_Query();
-                                $args = array(
-                                    'cat' => get_cat_ID( $title ),
-                                    'posts_per_page' => 10,
-                                    'category__not_in' => 950,
-                                    'paged' => $paged
-                                );
-                                $tom_query  = new WP_Query( $args );
-                                while( $tom_query->have_posts() ) {
-                                    $tom_query->the_post();
-                                    get_template_part( 'content', 'archive' );
+						if ( in_category( 'ask-tom') ) {
+							while( $tom_query->have_posts() ) {
+								$tom_query->the_post();
+								get_template_part( 'content', 'ask-tom-archive' );
 
-                                }
-                                wp_reset_postdata();
-                            }
-                    }
-                    ?>
-                </section>
-            </div>
-        <?php } ?>
-        <div class="nav-previous pull-left"><?php next_posts_link( 'Older posts' , $max_pages ); ?></div>
-        <div class="nav-next pull-right"><?php previous_posts_link( 'Newer posts' , $max_pages ); ?></div>
+							}
+							wp_reset_postdata();
+						}
+
+					}
+
+				?>
+					</section>
+			</div>
+		   <?php } else { ?>
+			<div class="masonry-wrapper">
+				<section class="not-tom full-width">
+					<?php
+					// STANDARD PARENT ARCHIVE CAT
+					if(is_archive() && !is_category() ) {
+						while ( have_posts() ) {
+							the_post();
+							get_template_part( 'content', 'archive' );
+						}
+					} else {
+						// ANOTHER ASK TOM SHORTCUT
+						$args = array(
+							'category__and' => array( $cat, 950 )
+						);
+
+						$my_query = new WP_Query( $args );
+						$inTom = False;
+						while( $my_query->have_posts() ):
+							$my_query->the_post();
+							$inTom = True;
+						endwhile;
+
+						wp_reset_postdata();
+
+						if ($inTom) { ?>
+							<article class="ask-tom-link">
+								<div class="excerpt-wrap">
+									<h2 class="posttitle">See <a href="/category/ask-tom/?cat=<?php echo $cat; ?>" rel="bookmark"><?php echo $title; ?></a> Questions and Answers</h2>
+								</div>
+								<div class="excerpt-wrap">
+									<h2 class="posttitle">See All<a href="/category/ask-tom"> Ask Tom</a> Questions and Answers</h2>
+								</div>
+							</article>
+						<?php } ?>
+
+
+						<?php wp_reset_postdata();
+
+						$queryString = $_SERVER['QUERY_STRING'];
+						$queryCat = get_cat_ID( $queryString );
+						$catName = $_GET['cat'];
+
+						if (isset($catName)) {
+							// SUB CAT PAGE
+
+							//
+							//
+							//THIS IS THE TOP POST LOOP
+							//
+							//
+							$tom_query = new WP_Query();
+							$args = array(
+								'posts_per_page' => 1,
+								'category_name' => $title, 'top',
+								'category__in' => array($catName, 951),
+								'category__and' => array($catName, 951)
+							);
+							$tom_query  = new WP_Query( $args );
+
+							while( $tom_query->have_posts() ) {
+								$tom_query->the_post();
+								get_template_part('content' , 'top-archive');
+							}
+							wp_reset_postdata();
+							//
+							//
+							//END THE TOP POST LOOP
+							//
+							//
+
+							$tom_query = new WP_Query();
+							$args = array(
+								'posts_per_page' => 10,
+								'cat' => $title,
+								'category__in' => array( $catName ),
+								'category__not_in'=> array(950 , 951),
+								'paged' => $paged
+							);
+								$tom_query  = new WP_Query( $args );
+								while( $tom_query->have_posts() ) {
+									$tom_query->the_post();
+									get_template_part( 'content', 'archive' );
+								}
+								wp_reset_postdata();
+							} else {
+								// CAT PAGE
+
+								//
+								//
+								//THIS IS THE TOP POST LOOP
+								//
+								//
+								$tom_query = new WP_Query();
+								$args = array(
+									'cat' => 951,
+									'category__and' => array( get_cat_ID( $title ), 951 ),
+									'post_parent' => 0
+								);
+								$tom_query  = new WP_Query( $args );
+
+								while( $tom_query->have_posts() ) {
+									$tom_query->the_post();
+
+									if(is_category_level('0')){
+										get_template_part('content' , 'top-archive');
+									}
+
+								}
+								wp_reset_postdata();
+								//
+								//
+								//END THE TOP POST LOOP
+								//
+								//
+
+								$tom_query = new WP_Query();
+								$args = array(
+									'cat' => get_cat_ID( $title ),
+									'posts_per_page' => 10,
+									'category__not_in'=> array(950 , 951),
+									'paged' => $paged
+								);
+								$tom_query  = new WP_Query( $args );
+								while( $tom_query->have_posts() ) {
+									$tom_query->the_post();
+
+									get_template_part( 'content', 'archive' );
+
+								}
+								wp_reset_postdata();
+							}
+					}
+					?>
+				</section>
+			</div>
+		<?php } ?>
+		<div class="nav-previous pull-left"><?php next_posts_link( 'Older posts' , $max_pages ); ?></div>
+		<div class="nav-next pull-right"><?php previous_posts_link( 'Newer posts' , $max_pages ); ?></div>
 
 		<?php } else { ?>
-            <h2><?php _e( 'Not Found', 'opti' ); ?></h2>
-        <?php
-		    }
-        ?>
-</div>
-<?php get_sidebar(); ?>
-</section>
-<script type="text/javascript">
-/*
-(function($){
-     if (jQuery('article').length < 10) {
-        jQuery('.nav-previous').hide()
-     }
- })(jQuery)
-        var article = $('.category-ask-tom .tom article');
+			<h2><?php _e( 'Not Found', 'opti' ); ?></h2>
+		<?php
+			}
+		?>
+	</div>
+	<?php get_sidebar(); ?>
+	</section>
+	<script type="text/javascript">
+	/*
+	(function($){
+	 if (jQuery('article').length < 10) {
+		jQuery('.nav-previous').hide()
+	 }
+	})(jQuery)
+		var article = $('.category-ask-tom .tom article');
 		article.hide();
 
 		$('.cat-show a').bind('click' , function (){
@@ -354,16 +415,16 @@ $actual_link = "http://$_SERVER[HTTP_HOST]/wordpress";
 	var newPathname = "";
 
 	for (i = 0; i < pathArray.length-2; i++) {
-    	newPathname += pathArray[i];
-	    if (i != pathArray.length-2) {
-	      newPathname += "/";
-	    }
+		newPathname += pathArray[i];
+		if (i != pathArray.length-2) {
+		  newPathname += "/";
+		}
 	}
 
 	jQuery('#nav-lower.menu.simple a').attr('href',newPathname);
 
-})(jQuery)
-*/
-</script>
-<?php
+	})(jQuery)
+	*/
+	</script>
+	<?php
 	get_footer();

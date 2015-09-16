@@ -1280,3 +1280,21 @@ function myprefix_adjust_offset_pagination($found_posts, $query) {
     }
     return $found_posts;
 }
+
+function is_category_level($depth){
+	$current_category = get_query_var('cat');
+	$my_category = get_categories('hide_empty=0&include='.$current_category);
+	$cat_depth=0;
+
+	if ($my_category[0]->category_parent == 0){
+		$cat_depth = 0;
+	} else {
+
+		while( $my_category[0]->category_parent != 0 ) {
+			$my_category = get_categories('hide_empty=0&include='.$my_category[0]->category_parent);
+			$cat_depth++;
+		}
+	}
+	if ($cat_depth == intval($depth)) { return true; }
+	return null;
+}

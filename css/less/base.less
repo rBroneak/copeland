@@ -956,7 +956,35 @@ a.post-edit-link:visited {
     border-top: none;
   }
 }
-.archive {
+.archive,
+.home {
+  .category-top {
+    h2 {
+      margin-top: 7%;
+    }
+    .entry {
+      display: none;
+    }
+    .postmetadata {
+      display: none;
+    }
+  }
+  #recent-excerpts li.category-top {
+
+    > h4,
+    p {
+      display: none;
+    }
+    .excerpt {
+      h4 {
+        margin-top: 7%;
+      }
+    }
+
+  }
+}
+.archive,
+{
   &.ask-tom {
     .ask-tom {
       border-left: none;
@@ -1082,6 +1110,14 @@ aside .widget-wrap li:last-child {
 	padding-bottom: 0;
 	border: 0;
 }
+  .widget-wrap {
+    .cat-item-951 {
+      display: none;
+    }
+  }
+
+
+
 
 
 
@@ -1900,4 +1936,18 @@ h2#description {
 	.children {
 		margin-left: 20px;
 	}
+}
+
+//HOME PAGE
+.top-img {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border: 2px solid #fff;
+}
+.home-loop-addin {
+  float: left;
+  margin: 15px 15px 0 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  width: 90px;
+  height: auto;
+  border: 2px solid #fff;
 }
